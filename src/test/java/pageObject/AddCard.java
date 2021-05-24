@@ -7,13 +7,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.WaitHelper;
 
-public class SignInApp {
+public class AddCard {
 
     public AndroidDriver<WebElement> ldriver;
 
     WaitHelper waithelper;
 
-    public SignInApp(AndroidDriver<WebElement> rdriver){
+    public AddCard(AndroidDriver<WebElement> rdriver){
         ldriver = rdriver;
         PageFactory.initElements(rdriver,this);
         waithelper = new WaitHelper(ldriver);
@@ -59,6 +59,10 @@ public class SignInApp {
     @CacheLookup
     WebElement clickSubmit;
 
+    @FindBy(id="com.tesco.payqwiq.ppe:id/snackbar_text")
+    @CacheLookup
+    WebElement errorSnackbarMesasgeSignInScreen;
+
     @FindBy(id = "com.tesco.payqwiq.ppe:id/pinKeyboardKey1") //Enter 4 digit PIN
     @CacheLookup
     WebElement pin1;
@@ -101,15 +105,39 @@ public class SignInApp {
     @CacheLookup
     WebElement hamBurgerMenu;
 
+    //My cards option from menu section
     @FindBy(xpath = "//androidx.appcompat.widget.LinearLayoutCompat[@content-desc=\"action_cards\"]/android.widget.CheckedTextView")
     @CacheLookup
     WebElement myCardsMenu;
 
+    //My cards screen text validation when no cards into the wallet
+    @FindBy(id = "com.tesco.payqwiq.ppe:id/card_list_add_card_title")
+    @CacheLookup
+    WebElement txtMyCards;
+
+    //Add card button from My cards screen when no cards present
+    @FindBy(id = "com.tesco.payqwiq.ppe:id/cardListAddCardButton")
+    @CacheLookup
+    WebElement btnAddCardMyCards;
+
+    //After adding the card under My cards screen
+    @FindBy(id = "com.tesco.payqwiq.ppe:id/card_details_layout")
+    @CacheLookup
+    WebElement txtFundingCarsMyCards;
+
+    @FindBy(id="com.tesco.payqwiq.ppe:id/remove_card")
+    @CacheLookup
+    WebElement btnRemoveCardSymbol;
+
+    @FindBy(id="android:id/button1")
+    @CacheLookup
+    WebElement btnRemoveCard;
+
+    //BountyAddCard Screen Field
+
     @FindBy(id="com.android.permissioncontroller:id/permission_deny_button") //Deny the Camera Prompt on BountyScreen
     @CacheLookup
     WebElement denyCameraOptionAddCardScreen;
-
-    //BountyAddCard Screen Field
 
     //CardNumber
     @FindBy(id = "com.tesco.payqwiq.ppe:id/card_number_edit")
@@ -136,12 +164,17 @@ public class SignInApp {
     @CacheLookup
     WebElement txtCardNickName;
 
+    //Save button under bounty add card screen
+    @FindBy(id="com.tesco.payqwiq.ppe:id/save_card_button")
+    @CacheLookup
+    WebElement btnSaveCard;
+
     //Something went wrong screen
     @FindBy(id ="com.tesco.payqwiq.ppe:id/cardAddedTitle")
     @CacheLookup
-    WebElement smWrngScreen;
+    WebElement smWrongScreen;
 
-    //Clik on 'add a new card'
+    //Click on 'add a new card'
     @FindBy(id="com.tesco.payqwiq.ppe:id/buttonAddCard")
     @CacheLookup
     WebElement addNewCard;
@@ -156,7 +189,7 @@ public class SignInApp {
     @CacheLookup
     WebElement txtcardAddedScreen;
 
-    //Next button on card addedd screen
+    //Next button on card added screen
     @FindBy(id="com.tesco.payqwiq.ppe:id/buttonDoneSuccess")
     @CacheLookup
     WebElement btnNext;
@@ -174,12 +207,13 @@ public class SignInApp {
 
     public void launchApp() throws InterruptedException {
         clickAccept.click();
+        waithelper.WaitForElement(allwLocation, 10);
         allwLocation.click();
-        waithelper.WaitForElement(clickSkip, 10);
+        waithelper.WaitForElement(clickSkip, 20);
 
         //Validation of On-boarding screen
         if(ldriver.findElementsById("com.tesco.payqwiq.ppe:id/welcomeTitle").isEmpty()) {
-            System.out.println("****App is failed to intialise****");
+            System.out.println("****App is failed to initialize****");
         } else {
             System.out.println("****App is initialised successfully****");
             clickSkip.click();
@@ -195,9 +229,14 @@ public class SignInApp {
             clickYesSignIn.click();
         }
         waithelper.WaitForElement(signInPageTitleText, 30);
+        if(ldriver.findElementsById("com.tesco.payqwiq.ppe:id/signInTitle").isEmpty()) {
+            System.out.println("****Sign in page is not displayed****");
+        }else {
+            System.out.println("****Sign in page is displayed successfully****");
+        }
     }
 
-    public void validateSignInTitle(String title){
+    /*public void validateSignInTitle(String title){
         String title1=signInPageTitleText.getText();
         if (title.equals(title1)){
             System.out.println("**********Test Passed***********");
@@ -205,7 +244,7 @@ public class SignInApp {
             System.out.println("**********Test Failed***********");
         }
 
-    }
+    }*/
 
     public void signIn(String email, String password) throws InterruptedException {
         emailText.clear();
@@ -218,6 +257,13 @@ public class SignInApp {
 
     public void submitSignIn() throws InterruptedException {
         clickSubmit.click();
+        if(ldriver.findElementsById("com.tesco.payqwiq.ppe:id/snackbar_text").isEmpty()) {
+            System.out.println("*****Sign in is Failed****");
+            ldriver.quit();
+        }else {
+            System.out.println("*****Sign in is successful*****");
+
+        }
     }
 
     public void setPin() throws InterruptedException {
@@ -226,14 +272,16 @@ public class SignInApp {
         pin2.click();
         pin3.click();
         pin4.click();
-        Thread.sleep(2000);
+        waithelper.WaitForElement(pin1, 10);
+        //Thread.sleep(2000);
         pin1.click();
         pin2.click();
         pin3.click();
         pin4.click();
         waithelper.WaitForElement(ClickPinSaved, 30);
         if(ldriver.findElementsById("com.tesco.payqwiq.ppe:id/heading").isEmpty()) {
-            System.out.println("****Pin Saved screen not displayed");
+            System.out.println("****Pin Saved screen not displayed****");
+            ldriver.quit();
         } else {
             System.out.println("****Pin Saved screen displayed****");
             ClickPinSaved.click();
@@ -247,19 +295,65 @@ public class SignInApp {
         noStoreReminder.click();
         waithelper.WaitForElement(brightnessDefault, 30);
         brightnessDefault.click();
-        Thread.sleep(3000); //Pay screen clubcard text propert id="com.tesco.payqwiq.ppe:id/view_clubcard_clubcard_name"
+        Thread.sleep(3000); //Pay screen clubcard text property id="com.tesco.payqwiq.ppe:id/view_clubcard_clubcard_name"
     }
 
-    public void validatePayScreenTitle()
-    {
-        if(ldriver.findElementsById("com.tesco.payqwiq.ppe:id/addCardBtn").isEmpty()) {
-            System.out.println("**********Wallet with Funding Cards***********");
-        }
-        else{
+    public void validateOriginOfInvokingBountyAddCard() throws InterruptedException {
+        if (ldriver.findElementsById("com.tesco.payqwiq.ppe:id/addCardBtn").isEmpty()) {
+            System.out.println("**********Wallet with Funding Card(s)***********");
+        } else {
             System.out.println("**********Wallet with no funding Cards***********");
         }
+        payScreenTitleText.click();
+        waithelper.WaitForElement(denyCameraOptionAddCardScreen, 30);
+        denyCameraOptionAddCardScreen.click();
+        Thread.sleep(3000);
+        //waithelper.WaitForElement(noStoreReminder, 30);
 
     }
 
+    public void addCard()
+    {
+            txtCardNumber.click();
+            txtCardNumber.sendKeys("8999951111111183");
+            txtExpiryDate.sendKeys("11/25");
+            txtCVV.sendKeys("123");
+            txtCardHolderName.sendKeys("test");
+            txtPostCode.click();
+            txtPostCode.clear();
+            txtPostCode.sendKeys("EH21AF");
+            txtCardNickName.sendKeys("test");
+            btnSaveCard.click();
 
-}
+            waithelper.WaitForElement(txtcardAddedScreen, 300);
+
+
+
+            }
+      public void cardAddedSuccess() {
+
+          if (ldriver.findElementsById("com.tesco.payqwiq.ppe:id/cardAddedTitle").isEmpty()) {
+              System.out.println("****Card Failed to add****");
+              ldriver.quit();
+          } else {
+              System.out.println("****Card Added successfully****");
+              btnNext.click();
+              waithelper.WaitForElement(btnGotIt, 30);
+              btnGotIt.click();
+              waithelper.WaitForElement(payScreenCardText, 30);
+
+
+          }
+      }
+
+      public void verifyTheAddedCard() {
+
+              if(ldriver.findElementsById("com.tesco.payqwiq.ppe:id/addCardBtn").isEmpty()) {
+                  System.out.println("****The Added card displayed on Pay Screen****");
+              }
+
+          }
+      }
+
+
+

@@ -2,7 +2,7 @@ Feature: DeleteCard
 
   Scenario: Delete Card from Pay+ Wallet
     Given User launch and sign in to Pay+ app
-    Then Enters Email as "neoload4@mailinator.com" and Password as "Tesco@20202"
+    Then Enters Email as "neoload4@mailinator.com" and Password as "Tesco@20202" to sign in
     And Navigates to My cards screen
     When Select any existing card
     And try to delete the card

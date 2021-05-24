@@ -2,42 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="682a4026-85db-4f80-9add-bb5c0f624ebd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Appium_Android_Automation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Feature/DeleteCard.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Feature/LaunchApp.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Feature/SignIn.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apkFolder/pay+-ppe3-release (3).apk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ExampleAndroidAppAutomation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ExampleiOSAppAutomation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObject/DeleteCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObject/LaunchApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObject/SignInApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/DeleteCardStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/LaunchStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/SignInStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testRunner/DeleteCardRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testRunner/LaunchAppRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testRunner/SignInRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/WaitHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/ExampleAndroidAppAutomation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/ExampleiOSAppAutomation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/META-INF/Appium_Android_Automation.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/pageObject/DeleteCard.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/pageObject/LaunchApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/pageObject/SignInApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/DeleteCardStep.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/LaunchStep.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/SignInStep.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/testRunner/DeleteCardRunner.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/testRunner/LaunchAppRunner.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/testRunner/SignInRunner.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/utilities/WaitHelper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Feature/DeleteCard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Feature/DeleteCard.feature" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,26 +20,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2159">
+            <state relative-caret-position="500">
               <caret line="127" column="19" selection-start-line="127" selection-start-column="19" selection-end-line="127" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Feature/SignIn.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Feature/DeleteCard.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+            <state relative-caret-position="68">
+              <caret line="4" column="91" selection-start-line="4" selection-start-column="91" selection-end-line="4" selection-end-column="91" />
             </state>
           </provider>
         </entry>
@@ -117,6 +73,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -302,6 +266,14 @@
       <option name="presentableId" value="Default" />
       <updated>1620626156802</updated>
     </task>
+    <task id="LOCAL-00001" summary="My First Commit">
+      <created>1621835179272</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621835179272</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -338,6 +310,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="9" y="23" width="1660" height="958" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20889987" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -393,6 +366,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="My First Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="My First Commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Appium_Android_Automation$SignInRunner.ic" NAME="SignInRunner Coverage Results" MODIFIED="1620796446607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -517,20 +494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2159">
-          <caret line="127" column="19" selection-start-line="127" selection-start-column="19" selection-end-line="127" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Feature/DeleteCard.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/DeleteCard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -554,8 +517,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Feature/SignIn.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="68">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="127" column="19" selection-start-line="127" selection-start-column="19" selection-end-line="127" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feature/DeleteCard.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="91" selection-start-line="4" selection-start-column="91" selection-end-line="4" selection-end-column="91" />
         </state>
       </provider>
     </entry>

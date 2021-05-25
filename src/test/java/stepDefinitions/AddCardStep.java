@@ -16,7 +16,8 @@ public class AddCardStep {
     public AndroidDriver<WebElement> driver;
 
     @Given("User launch and sign in to Pay+ app")
-    public void user_launch_and_sign_in_to_pay_app() throws MalformedURLException, InterruptedException {
+    public void user_launch_and_sign_in_to_pay_app() throws MalformedURLException, InterruptedException
+    {
 
         DesiredCapabilities dc = new DesiredCapabilities();
 
@@ -40,7 +41,8 @@ public class AddCardStep {
     }
 
     @Then("User enters Email as {string} and Password as {string} to sign in")
-    public void user_enters_email_as_and_password_as_to_sign_in(String email, String password) throws InterruptedException {
+    public void user_enters_email_as_and_password_as_to_sign_in(String email, String password) throws InterruptedException
+    {
 
         ap.signIn(email, password);
         ap.submitSignIn();
@@ -50,26 +52,30 @@ public class AddCardStep {
     }
 
     @Then("Initiates the BountyAdd card screen either from Pay or from my cards screen.")
-    public void initiates_the_bounty_add_card_screen_either_from_pay_or_from_my_cards_screen() throws InterruptedException {
+    public void initiates_the_bounty_add_card_screen_either_from_pay_or_from_my_cards_screen() throws InterruptedException
+    {
         ap.validateOriginOfInvokingBountyAddCard();
 
     }
 
     @When("Enter all card details and click on save CTA")
-    public void enter_all_card_details_and_click_on_save_cta() {
+    public void enter_all_card_details_and_click_on_save_cta()
+    {
         ap.addCard();
 
     }
 
     @Then("Card will be added successfully")
-    public void card_will_be_added_successfully() {
+    public void card_will_be_added_successfully()
+    {
 
         ap.cardAddedSuccess();
 
     }
 
     @Then("Added card should be reflected successfully.")
-    public void added_card_should_be_reflected_successfully() {
+    public void added_card_should_be_reflected_successfully()
+    {
 
         ap.verifyTheAddedCard();
         driver.quit();

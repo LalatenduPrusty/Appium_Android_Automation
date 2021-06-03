@@ -3,21 +3,24 @@ package stepDefinitions;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.cucumber.java.en.*;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import pageObject.LaunchApp;
 
 import java.net.URL;
 
-public class LaunchStep {
-
-    public LaunchApp lp;
-    public AndroidDriver<WebElement> driver;
-
-
+public class LaunchStep extends BaseClass
+{
 
     @Given("User installs Pay+ App")
     public void user_installs_pay_app() throws Exception {
+
+        // Added logger to the project
+        logger= Logger.getLogger("PayPlusProject");
+        PropertyConfigurator.configure("log4j.properties");
+
         DesiredCapabilities dc = new DesiredCapabilities();
 
         dc.setCapability(MobileCapabilityType.AUTOMATION_NAME,"Appium");
@@ -34,78 +37,42 @@ public class LaunchStep {
         URL url = new URL("http://localhost:4723/wd/hub");
 
         AndroidDriver<WebElement> driver = new AndroidDriver<WebElement>(url,dc);
-        lp=new LaunchApp(driver);
+        logger.info("****Initiate Android Driver****");
+        launch=new LaunchApp(driver);
 
 
     }
     @When("User clicks on install agreement")
-    public void user_clicks_on_install_agreement() throws InterruptedException {
-        lp.installAgreement();
-        Thread.sleep(2000);
+    public void user_clicks_on_install_agreement() throws InterruptedException
+    {
+        logger.info("****Install the Privacy Agreement****");
+        launch.installAgreement();
 
     }
 
     @When("User allows device location")
-    public void user_allows_device_location() throws InterruptedException {
-        lp.alwaysAllowLocation();
-        Thread.sleep(8000);
+    public void user_allows_device_location() throws InterruptedException
+    {
+        logger.info("****Allowing LocationPrompt****");
+        launch.alwaysAllowLocation();
 
     }
 
-    @When("user cliks on sign in CTA")
-    public void user_cliks_on_sign_in_cta() throws InterruptedException {
-        lp.skipOnBoarding();
-        Thread.sleep(2000);
-        lp.yesSignIn();
+    @When("user clicks on sign in CTA")
+    public void user_clicks_on_sign_in_cta() throws InterruptedException
+    {
+        logger.info("****Skipping On-boarding screens****");
+        launch.skipOnBoarding();
+        logger.info("****Click to display Sign in screen****");
+        launch.yesSignIn();
 
     }
 
     @Then("Page Sign in page {string} displays")
     public void page_sign_in_page_displayes(String title)
     {
-
-        lp.validateTitle(title);
-
-    }
-
-    @When("User enters email as {string} and password as {string}")
-    public void user_enters_email_as_and_password_as(String emailaddress, String password) throws InterruptedException {
-        lp.setUserName(emailaddress);
-        lp.setUserPassword(password);
-        Thread.sleep(3000);
-        lp.login();
-
-    }
-
-    @When("enter the PIN")
-    public void enter_the_pin() throws InterruptedException {
-        lp.enterPIN();
-
-
-    }
-
-    @When("confirm PIN")
-    public void confirm_pin() throws InterruptedException {
-        lp.confirmPIN();
-
-    }
-
-    @When("accepts on pin saved screen")
-    public void accepts_on_pin_saved_screen() throws InterruptedException {
-        lp.pinSavedConfirm();
-        lp.storeReminderIgnore();
-        lp.brightnessDefault();
-
-    }
-
-    @Then("Pay screen {string} should be displayed")
-    public void pay_screen_should_be_displayed(String titlePay) throws InterruptedException {
-        lp.validateTitle1(titlePay);
-    }
-
-    @Then("Close the app")
-    public void close_the_app() {
-        driver.quit();
+        logger.info("****Verifying the sign in page****");
+        launch.validateTitle(title);
 
     }
 

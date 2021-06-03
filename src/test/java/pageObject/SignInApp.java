@@ -91,95 +91,24 @@ public class SignInApp {
     @CacheLookup
     WebElement brightnessDefault;
 
-
-    @FindBy(id = "com.tesco.payqwiq.ppe:id/addCardBtn") // Validate the Pay screen without cards
-    @CacheLookup
-    WebElement payScreenTitleText;
-
-
-    @FindBy(xpath = "//android.widget.ImageButton[@content-desc=\"Setting displayed\"]") // Hamburger Menu
-    @CacheLookup
-    WebElement hamBurgerMenu;
-
-    @FindBy(xpath = "//androidx.appcompat.widget.LinearLayoutCompat[@content-desc=\"action_cards\"]/android.widget.CheckedTextView")
-    @CacheLookup
-    WebElement myCardsMenu;
-
-    @FindBy(id="com.android.permissioncontroller:id/permission_deny_button") //Deny the Camera Prompt on BountyScreen
-    @CacheLookup
-    WebElement denyCameraOptionAddCardScreen;
-
-    //BountyAddCard Screen Field
-
-    //CardNumber
-    @FindBy(id = "com.tesco.payqwiq.ppe:id/card_number_edit")
-    @CacheLookup
-    WebElement txtCardNumber;
-
-    @FindBy(id = "com.tesco.payqwiq.ppe:id/card_expiry_edit")
-    @CacheLookup
-    WebElement txtExpiryDate;
-
-    @FindBy(id = "com.tesco.payqwiq.ppe:id/card_cvv_edit")
-    @CacheLookup
-    WebElement txtCVV;
-
-    @FindBy(id = "com.tesco.payqwiq.ppe:id/card_name_edit")
-    @CacheLookup
-    WebElement txtCardHolderName;
-
-    @FindBy(id = "com.tesco.payqwiq.ppe:id/card_postcode_edit")
-    @CacheLookup
-    WebElement txtPostCode;
-
-    @FindBy(id = "com.tesco.payqwiq.ppe:id/card_nickname_edit")
-    @CacheLookup
-    WebElement txtCardNickName;
-
-    //Something went wrong screen
-    @FindBy(id ="com.tesco.payqwiq.ppe:id/cardAddedTitle")
-    @CacheLookup
-    WebElement smWrngScreen;
-
-    //Clik on 'add a new card'
-    @FindBy(id="com.tesco.payqwiq.ppe:id/buttonAddCard")
-    @CacheLookup
-    WebElement addNewCard;
-
-    //Click on "I'll do it later"
-    @FindBy(id="com.tesco.payqwiq.ppe:id/buttonDoitLater")
-    @CacheLookup
-    WebElement doItLater;
-
-    //Successful added card screen
-    @FindBy(id="com.tesco.payqwiq.ppe:id/cardAddedTitle")
-    @CacheLookup
-    WebElement txtcardAddedScreen;
-
-    //Next button on card addedd screen
-    @FindBy(id="com.tesco.payqwiq.ppe:id/buttonDoneSuccess")
-    @CacheLookup
-    WebElement btnNext;
-
-    //Animation screen
-    @FindBy(id="com.tesco.payqwiq.ppe:id/buttonDone")
-    @CacheLookup
-    WebElement btnGotIt;
-
     //PayScreen after card got addedd
     @FindBy(id="com.tesco.payqwiq.ppe:id/txtCardExpiresDate")// Validate the Pay screen with cards
     @CacheLookup
     WebElement payScreenCardText;
 
 
-    public void launchApp() throws InterruptedException {
+    public void launchApp() throws InterruptedException
+    {
+        waithelper.WaitForElement(clickAccept,10);
         clickAccept.click();
+        waithelper.WaitForElement(allwLocation,10);
         allwLocation.click();
         waithelper.WaitForElement(clickSkip, 10);
 
         //Validation of On-boarding screen
-        if(ldriver.findElementsById("com.tesco.payqwiq.ppe:id/welcomeTitle").isEmpty()) {
-            System.out.println("****App is failed to intialise****");
+        if(ldriver.findElementsById("com.tesco.payqwiq.ppe:id/welcomeTitle").isEmpty())
+        {
+            System.out.println("****App is failed to initialise****");
         } else {
             System.out.println("****App is initialised successfully****");
             clickSkip.click();
@@ -188,7 +117,8 @@ public class SignInApp {
         waithelper.WaitForElement(clickYesSignIn, 30);
 
         //Validation of Prep sign in screen
-        if(ldriver.findElementsById("com.tesco.payqwiq.ppe:id/pre_signin_title").isEmpty()) {
+        if(ldriver.findElementsById("com.tesco.payqwiq.ppe:id/pre_signin_title").isEmpty())
+        {
             System.out.println("****Pre-sign page not displayed****");
         }else {
             System.out.println("*****Pre-sign in page displayed*****");
@@ -197,17 +127,19 @@ public class SignInApp {
         waithelper.WaitForElement(signInPageTitleText, 30);
     }
 
-    public void validateSignInTitle(String title){
+    public void validateSignInTitle(String title)
+    {
         String title1=signInPageTitleText.getText();
         if (title.equals(title1)){
-            System.out.println("**********Test Passed***********");
+            System.out.println("**********Sign-in Page displayed***********");
         }else {
-            System.out.println("**********Test Failed***********");
+            System.out.println("**********Failed to display Sign-in Page***********");
         }
 
     }
 
-    public void signIn(String email, String password) throws InterruptedException {
+    public void signIn(String email, String password)
+    {
         emailText.clear();
         emailText.sendKeys(email);
         passwordText.click();
@@ -216,17 +148,20 @@ public class SignInApp {
 
     }
 
-    public void submitSignIn() throws InterruptedException {
+    public void submitSignIn()
+    {
         clickSubmit.click();
     }
 
-    public void setPin() throws InterruptedException {
+    public void setPin()
+    {
         waithelper.WaitForElement(pin1, 30);
         pin1.click();
         pin2.click();
         pin3.click();
         pin4.click();
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
+        waithelper.WaitForElement(pin1, 30);
         pin1.click();
         pin2.click();
         pin3.click();
@@ -243,7 +178,8 @@ public class SignInApp {
 
     }
 
-    public void storeReminderBrightness() throws InterruptedException {
+    public void storeReminderBrightness() throws InterruptedException
+    {
         noStoreReminder.click();
         waithelper.WaitForElement(brightnessDefault, 30);
         brightnessDefault.click();
@@ -252,13 +188,19 @@ public class SignInApp {
 
     public void validatePayScreenTitle()
     {
-        if(ldriver.findElementsById("com.tesco.payqwiq.ppe:id/addCardBtn").isEmpty()) {
+        if(ldriver.findElementsById("com.tesco.payqwiq.ppe:id/addCardBtn").isEmpty())
+        {
             System.out.println("**********Wallet with Funding Cards***********");
         }
         else{
             System.out.println("**********Wallet with no funding Cards***********");
         }
 
+    }
+
+    public void closeApp()
+    {
+        ldriver.quit();
     }
 
 

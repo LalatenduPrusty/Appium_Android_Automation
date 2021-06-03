@@ -1,0 +1,16 @@
+pageObject/DeleteCard.class
+stepDefinitions/AddCardStep.class
+stepDefinitions/BaseClass.class
+testRunner/DeleteCardRunner.class
+pageObject/LaunchApp.class
+stepDefinitions/SignInStep.class
+stepDefinitions/LaunchStep.class
+ExampleAndroidAppAutomation.class
+pageObject/SignInApp.class
+stepDefinitions/DeleteCardStep.class
+testRunner/LaunchAppRunner.class
+testRunner/AddCardRunner.class
+pageObject/AddCard.class
+ExampleiOSAppAutomation.class
+testRunner/SignInRunner.class
+utilities/WaitHelper.class

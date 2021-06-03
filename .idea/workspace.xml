@@ -2,14 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="682a4026-85db-4f80-9add-bb5c0f624ebd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Feature/AddCard.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObject/AddCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/AddCardStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testRunner/AddCardRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/BaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Feature/LaunchApp.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Feature/LaunchApp.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Feature/SignIn.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Feature/SignIn.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/AddCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/AddCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/DeleteCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/DeleteCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/LaunchApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/LaunchApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/SignInApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/SignInApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testRunner/LaunchAppRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testRunner/LaunchAppRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/AddCardStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/AddCardStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/DeleteCardStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/DeleteCardStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/LaunchStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/LaunchStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/SignInStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/SignInStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testRunner/AddCardRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testRunner/AddCardRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testRunner/SignInRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testRunner/SignInRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ExampleAndroidAppAutomation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ExampleAndroidAppAutomation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ExampleiOSAppAutomation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ExampleiOSAppAutomation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/Appium_Android_Automation.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/DeleteCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObject/DeleteCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/LaunchApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObject/LaunchApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/SignInApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObject/SignInApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/DeleteCardStep.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/DeleteCardStep.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/LaunchStep.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/LaunchStep.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/SignInStep.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/SignInStep.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testRunner/DeleteCardRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testRunner/DeleteCardRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testRunner/LaunchAppRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testRunner/LaunchAppRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testRunner/SignInRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testRunner/SignInRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/WaitHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/WaitHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,11 +47,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testRunner/AddCardRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+            <state relative-caret-position="204">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,22 +69,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/AddCardStep.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testRunner/DeleteCardRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/AddCard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4299">
-              <caret line="336" column="29" selection-start-line="336" selection-start-column="29" selection-end-line="336" selection-end-column="29" />
+            <state relative-caret-position="187">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,10 +81,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Feature/AddCard.feature">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testRunner/LaunchAppRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="89" selection-start-line="4" selection-start-column="89" selection-end-line="4" selection-end-column="89" />
+            <state relative-caret-position="153">
+              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/testRunner/SignInRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,7 +117,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="BranchY" />
       </map>
     </option>
     <option name="PUSH_TAGS">
@@ -93,25 +127,30 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/ExampleAndroidAppAutomation.java" />
         <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/LaunchApp.java" />
-        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/LaunchStep.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pageObject/LaunchApp.java" />
-        <option value="$PROJECT_DIR$/Feature/LaunchApp.feature" />
         <option value="$PROJECT_DIR$/src/test/java/ExampleiOSAppAutomation.java" />
         <option value="$PROJECT_DIR$/src/test/java/utilities/WaitHelper.java" />
-        <option value="$PROJECT_DIR$/Feature/SignIn.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/testRunner/SignInRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/SignInStep.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testRunner/DeleteCardRunner.java" />
         <option value="$PROJECT_DIR$/Feature/DeleteCard.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/pageObject/SignInApp.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testRunner/LaunchAppRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testRunner/AddCardRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/AddCardStep.java" />
         <option value="$PROJECT_DIR$/Feature/AddCard.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/BaseClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/DeleteCardStep.java" />
+        <option value="$PROJECT_DIR$/Feature/LaunchApp.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/testRunner/LaunchAppRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/SignInStep.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pageObject/SignInApp.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/LaunchStep.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepDefinitions/AddCardStep.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObject/AddCard.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pageObject/DeleteCard.java" />
+        <option value="$PROJECT_DIR$/Feature/SignIn.feature" />
+        <option value="$PROJECT_DIR$/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/pageObject/LaunchApp.java" />
+        <option value="$PROJECT_DIR$/run.bat" />
+        <option value="$PROJECT_DIR$/src/test/java/testRunner/AddCardRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testRunner/DeleteCardRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testRunner/SignInRunner.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -123,9 +162,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="9" />
     <option name="y" value="23" />
-    <option name="width" value="1660" />
+    <option name="width" value="1680" />
     <option name="height" value="958" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -136,6 +174,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -146,12 +185,12 @@
             <path>
               <item name="Appium_Android_Automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="Appium_Android_Automation" type="462c0819:PsiDirectoryNode" />
-              <item name="apkFolder" type="462c0819:PsiDirectoryNode" />
+              <item name="Feature" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Appium_Android_Automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="Appium_Android_Automation" type="462c0819:PsiDirectoryNode" />
-              <item name="Feature" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Appium_Android_Automation" type="b2602c69:ProjectViewProjectNode" />
@@ -195,21 +234,29 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="testRunner" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Appium_Android_Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Appium_Android_Automation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/apkFolder" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.5689655" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -228,49 +275,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AddCardRunner">
-    <configuration name="ExampleiOSAppAutomation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ExampleiOSAppAutomation" />
-      <module name="Appium_Android_Automation" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: SignIn" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="3" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/Feature/SignIn.feature" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="Appium_Android_Automation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm3SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: SignIn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Add the funding card to Pay+ Wallet" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="3" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/Feature/AddCard.feature" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="Appium_Android_Automation" />
-      <option name="NAME_FILTER" value="^Add the funding card to Pay\+ Wallet$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm3SMFormatter --name &quot;^Add the funding card to Pay\+ Wallet$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Add the funding card to Pay+ Wallet" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.LaunchAppRunner">
     <configuration name="AddCardRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Appium_Android_Automation" />
       <extension name="coverage">
@@ -281,6 +286,51 @@
       </extension>
       <option name="PACKAGE_NAME" value="testRunner" />
       <option name="MAIN_CLASS_NAME" value="testRunner.AddCardRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LaunchAppRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Appium_Android_Automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testRunner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testRunner" />
+      <option name="MAIN_CLASS_NAME" value="testRunner.LaunchAppRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignInRunner (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Appium_Android_Automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testRunner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testRunner" />
+      <option name="MAIN_CLASS_NAME" value="testRunner.SignInRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignInRunner (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Appium_Android_Automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testRunner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testRunner" />
+      <option name="MAIN_CLASS_NAME" value="testRunner.SignInRunner" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -303,11 +353,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AddCardRunner" />
-        <item itemvalue="Cucumber java.Scenario: Add the funding card to Pay+ Wallet" />
+        <item itemvalue="JUnit.LaunchAppRunner" />
+        <item itemvalue="JUnit.SignInRunner (2)" />
+        <item itemvalue="JUnit.SignInRunner (1)" />
         <item itemvalue="JUnit.SignInRunner" />
-        <item itemvalue="Cucumber java.Feature: SignIn" />
-        <item itemvalue="Application.ExampleiOSAppAutomation" />
+        <item itemvalue="JUnit.AddCardRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -336,46 +386,53 @@
       <option name="project" value="LOCAL" />
       <updated>1621837799106</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added another scenario on Sign in Feature file">
+      <created>1622697840699</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1622697840699</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AddCardRunner - 2021.05.24 at 15h 53m 04s.xml">
-      <configuration name="AddCardRunner" configurationId="JUnit" />
+    <history-entry file="LaunchAppRunner - 2021.06.03 at 11h 07m 23s.xml">
+      <configuration name="LaunchAppRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddCardRunner - 2021.05.24 at 16h 02m 51s.xml">
-      <configuration name="AddCardRunner" configurationId="JUnit" />
+    <history-entry file="LaunchAppRunner - 2021.06.03 at 11h 28m 02s.xml">
+      <configuration name="LaunchAppRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddCardRunner - 2021.05.24 at 16h 55m 00s.xml">
-      <configuration name="AddCardRunner" configurationId="JUnit" />
+    <history-entry file="LaunchAppRunner - 2021.06.03 at 11h 35m 51s.xml">
+      <configuration name="LaunchAppRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddCardRunner - 2021.05.24 at 16h 55m 58s.xml">
-      <configuration name="AddCardRunner" configurationId="JUnit" />
+    <history-entry file="LaunchAppRunner - 2021.06.03 at 11h 36m 36s.xml">
+      <configuration name="LaunchAppRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddCardRunner - 2021.05.24 at 17h 01m 20s.xml">
-      <configuration name="AddCardRunner" configurationId="JUnit" />
+    <history-entry file="LaunchAppRunner - 2021.06.03 at 11h 37m 07s.xml">
+      <configuration name="LaunchAppRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddCardRunner - 2021.05.24 at 17h 03m 07s.xml">
-      <configuration name="AddCardRunner" configurationId="JUnit" />
+    <history-entry file="SignInRunner - 2021.06.03 at 12h 00m 58s.xml">
+      <configuration name="SignInRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddCardRunner - 2021.05.24 at 17h 05m 25s.xml">
-      <configuration name="AddCardRunner" configurationId="JUnit" />
+    <history-entry file="LaunchAppRunner - 2021.06.03 at 14h 20m 40s.xml">
+      <configuration name="LaunchAppRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddCardRunner - 2021.05.24 at 17h 06m 47s.xml">
-      <configuration name="AddCardRunner" configurationId="JUnit" />
+    <history-entry file="LaunchAppRunner - 2021.06.03 at 14h 22m 05s.xml">
+      <configuration name="LaunchAppRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddCardRunner - 2021.05.24 at 17h 09m 02s.xml">
-      <configuration name="AddCardRunner" configurationId="JUnit" />
+    <history-entry file="LaunchAppRunner - 2021.06.03 at 14h 23m 59s.xml">
+      <configuration name="LaunchAppRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddCardRunner - 2021.05.24 at 17h 10m 11s.xml">
-      <configuration name="AddCardRunner" configurationId="JUnit" />
+    <history-entry file="LaunchAppRunner - 2021.06.03 at 14h 25m 13s.xml">
+      <configuration name="LaunchAppRunner" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="23" width="1660" height="958" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="958" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20889987" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24786325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -385,14 +442,14 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.3290993" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3290993" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.3290993" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.3290993" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.3995381" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3290993" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3290993" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50061804" side_tool="true" weight="0.3290993" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49938196" weight="0.3290993" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -439,11 +496,26 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="My First Commit" />
     <MESSAGE value="Changed on DeleteCard.feature file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed on DeleteCard.feature file" />
+    <MESSAGE value="Added another scenario on Sign in Feature file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added another scenario on Sign in Feature file" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Appium_Android_Automation$SignInRunner.ic" NAME="SignInRunner Coverage Results" MODIFIED="1620796446607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -466,20 +538,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/LaunchStep.java">
+    <entry file="file://$PROJECT_DIR$/target/cucumber-html-report.html" />
+    <entry file="file://$PROJECT_DIR$/Feature/DeleteCard.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="44" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="14" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret selection-end-line="8" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/LaunchApp.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="185">
+          <caret line="300" column="30" selection-start-line="300" selection-start-column="30" selection-end-line="300" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ExampleAndroidAppAutomation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="23" selection-end-column="91" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -496,69 +573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ExampleAndroidAppAutomation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="23" selection-end-column="91" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Feature/LaunchApp.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/cucumber-html-report.html" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/DeleteCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Feature/DeleteCard.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="8" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="127" column="19" selection-start-line="127" selection-start-column="19" selection-end-line="127" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testRunner/LaunchAppRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testRunner/DeleteCardRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/DeleteCardStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/utilities/WaitHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -569,54 +583,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="300" column="30" selection-start-line="300" selection-start-column="30" selection-end-line="300" selection-end-column="30" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/log/application.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testRunner/SignInRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/LaunchStep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/SignInStep.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="38" />
+        <state relative-caret-position="435">
+          <caret line="49" column="8" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/SignInApp.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/AddCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="246" column="32" selection-start-line="246" selection-start-column="32" selection-end-line="246" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Feature/SignIn.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="89" selection-start-line="5" selection-start-column="89" selection-end-line="5" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testRunner/AddCardRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        <state relative-caret-position="2027">
+          <caret line="344" column="41" selection-start-line="344" selection-start-column="41" selection-end-line="344" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -630,23 +636,128 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/AddCardStep.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/DeleteCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+        <state relative-caret-position="540">
+          <caret line="244" column="67" selection-start-line="244" selection-start-column="67" selection-end-line="244" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/AddCard.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/SignInApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4299">
-          <caret line="336" column="29" selection-start-line="336" selection-start-column="29" selection-end-line="336" selection-end-column="29" />
+        <state relative-caret-position="178">
+          <caret line="96" column="33" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/DeleteCardStep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="68" column="14" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinitions/AddCardStep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="86" column="61" selection-start-line="86" selection-start-column="61" selection-end-line="86" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feature/SignIn.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Feature/LaunchApp.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/LaunchApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="79" column="50" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testRunner/AddCardRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testRunner/DeleteCardRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testRunner/LaunchAppRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testRunner/SignInRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -659,7 +770,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.5689655" />
               </list>
             </option>
           </splitter-proportions>
@@ -667,10 +778,11 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.5689655" />
               </list>
             </option>
           </splitter-proportions>
@@ -681,7 +793,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.5689655" />
               </list>
             </option>
           </splitter-proportions>
@@ -689,10 +801,11 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.5689655" />
               </list>
             </option>
           </splitter-proportions>
@@ -700,10 +813,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
+          <last-edited>Appium_Android_Automation</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.5689655" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -723,10 +838,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: cglib:cglib:3.3.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.5689655" />
               </list>
             </option>
           </splitter-proportions>

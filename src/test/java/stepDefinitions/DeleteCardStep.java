@@ -10,10 +10,10 @@ import pageObject.DeleteCard;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class DeleteCardStep {
+public class DeleteCardStep extends BaseClass {
 
-    public DeleteCard rc;
-    public AndroidDriver<WebElement> driver;
+    //public DeleteCard remove;
+    //public AndroidDriver<WebElement> driver;
 
 
     @Given("User install,launch and navigates to sign in screen")
@@ -35,9 +35,9 @@ public class DeleteCardStep {
         URL url = new URL("http://localhost:4723/wd/hub");
 
         driver = new AndroidDriver<WebElement>(url, dc);
-        rc = new DeleteCard(driver);
+        remove = new DeleteCard(driver);
 
-        rc.launchApp();
+        remove.launchApp();
 
 
     }
@@ -45,28 +45,28 @@ public class DeleteCardStep {
     public void enters_email_as_and_password_as_to_sign_in(String email, String password) throws InterruptedException
     {
 
-        rc.signIn(email, password);
+        remove.signIn(email, password);
 
     }
     @Then("Navigates to My cards screen")
     public void navigates_to_my_cards_screen()
     {
 
-        rc.navigateToMyCardsScreen();
+        remove.navigateToMyCardsScreen();
 
     }
     @When("User selects any existing card to delete")
     public void user_selects_any_existing_card_to_delete()
     {
 
-        rc.removeCard();
+        remove.removeCard();
 
     }
     @Then("Card will be deleted from wallet and displayed with {string}")
     public void card_will_be_deleted_from_wallet_and_displayed_with(String string)
     {
 
-        rc.removeCardConfirmation();
+        remove.removeCardConfirmation();
 
     }
 

@@ -1,0 +1,67 @@
+2021-06-03 11:06:43,374 - PayPlusProject - INFO - ****Initiate Android Driver****
+2021-06-03 11:06:43,417 - PayPlusProject - INFO - ****Install the Privacy Agreement****
+2021-06-03 11:06:46,021 - PayPlusProject - INFO - ****Allowing LocationPrompt****
+2021-06-03 11:06:54,115 - PayPlusProject - INFO - ****Skipping On-boarding screens****
+2021-06-03 11:06:56,338 - PayPlusProject - INFO - ****Verifying the sign in page****
+2021-06-03 11:06:56,989 - PayPlusProject - INFO - ****Entering wallet details and sign in****
+2021-06-03 11:07:07,568 - PayPlusProject - INFO - ****Setting the PIN****
+2021-06-03 11:07:10,433 - PayPlusProject - INFO - ****Confirming the PIN****
+2021-06-03 11:07:15,240 - PayPlusProject - INFO - ****Acknowledging store reminder and Brightness ****
+2021-06-03 11:07:22,519 - PayPlusProject - INFO - ****Verifying the Pay screen****
+2021-06-03 11:27:50,978 - PayPlusProject - INFO - ****Initiate Android Driver****
+2021-06-03 11:27:51,017 - PayPlusProject - INFO - ****Install the Privacy Agreement****
+2021-06-03 11:27:53,613 - PayPlusProject - INFO - ****Allowing LocationPrompt****
+2021-06-03 11:36:59,921 - PayPlusProject - INFO - ****Initiate Android Driver****
+2021-06-03 11:36:59,965 - PayPlusProject - INFO - ****Install the Privacy Agreement****
+2021-06-03 11:37:00,567 - PayPlusProject - INFO - ****Allowing LocationPrompt****
+2021-06-03 11:37:01,275 - PayPlusProject - INFO - ****Skipping On-boarding screens****
+2021-06-03 11:37:06,058 - PayPlusProject - INFO - ****Click to display Sign in screen****
+2021-06-03 11:37:06,714 - PayPlusProject - INFO - ****Verifying the sign in page****
+2021-06-03 11:59:13,491 - PayPlusProject - INFO - ****App launched successfully****
+2021-06-03 11:59:23,073 - PayPlusProject - INFO - ****Sign-in page displayed****
+2021-06-03 11:59:23,100 - PayPlusProject - INFO - ****Provided wallet details****
+2021-06-03 11:59:26,254 - PayPlusProject - INFO - ****Clicked on sign in button****
+2021-06-03 11:59:26,327 - PayPlusProject - INFO - ****Set the PIN****
+2021-06-03 11:59:40,746 - PayPlusProject - INFO - ****Acknowledged Reminder and brightness prompts ****
+2021-06-03 11:59:44,842 - PayPlusProject - INFO - ****Pay screen validated successfully****
+2021-06-03 11:59:44,894 - PayPlusProject - INFO - ****Quit the driver****
+2021-06-03 11:59:52,230 - PayPlusProject - INFO - ****App launched successfully****
+2021-06-03 12:00:00,082 - PayPlusProject - INFO - ****Sign-in page displayed****
+2021-06-03 12:00:00,102 - PayPlusProject - INFO - ****Provided wallet details****
+2021-06-03 12:00:04,156 - PayPlusProject - INFO - ****Clicked on sign in button****
+2021-06-03 12:00:04,228 - PayPlusProject - INFO - ****Set the PIN****
+2021-06-03 12:00:16,835 - PayPlusProject - INFO - ****Acknowledged Reminder and brightness prompts ****
+2021-06-03 12:00:20,941 - PayPlusProject - INFO - ****Pay screen validated successfully****
+2021-06-03 12:00:20,996 - PayPlusProject - INFO - ****Quit the driver****
+2021-06-03 12:00:28,500 - PayPlusProject - INFO - ****App launched successfully****
+2021-06-03 12:00:37,142 - PayPlusProject - INFO - ****Sign-in page displayed****
+2021-06-03 12:00:37,164 - PayPlusProject - INFO - ****Provided wallet details****
+2021-06-03 12:00:40,405 - PayPlusProject - INFO - ****Clicked on sign in button****
+2021-06-03 12:00:40,450 - PayPlusProject - INFO - ****Set the PIN****
+2021-06-03 12:00:53,142 - PayPlusProject - INFO - ****Acknowledged Reminder and brightness prompts ****
+2021-06-03 12:00:57,236 - PayPlusProject - INFO - ****Pay screen validated successfully****
+2021-06-03 12:00:57,304 - PayPlusProject - INFO - ****Quit the driver****
+2021-06-03 14:20:30,870 - PayPlusProject - INFO - ****Initiate Android Driver****
+2021-06-03 14:20:30,915 - PayPlusProject - INFO - ****Install the Privacy Agreement****
+2021-06-03 14:20:31,534 - PayPlusProject - INFO - ****Allowing LocationPrompt****
+2021-06-03 14:20:32,746 - PayPlusProject - INFO - ****Skipping On-boarding screens****
+2021-06-03 14:20:38,157 - PayPlusProject - INFO - ****Click to display Sign in screen****
+2021-06-03 14:20:38,969 - PayPlusProject - INFO - ****Verifying the sign in page****
+2021-06-03 14:21:56,189 - PayPlusProject - INFO - ****Initiate Android Driver****
+2021-06-03 14:21:56,240 - PayPlusProject - INFO - ****Install the Privacy Agreement****
+2021-06-03 14:21:56,831 - PayPlusProject - INFO - ****Allowing LocationPrompt****
+2021-06-03 14:21:57,526 - PayPlusProject - INFO - ****Skipping On-boarding screens****
+2021-06-03 14:22:03,072 - PayPlusProject - INFO - ****Click to display Sign in screen****
+2021-06-03 14:22:04,282 - PayPlusProject - INFO - ****Verifying the sign in page****
+2021-06-03 14:23:51,949 - PayPlusProject - INFO - ****Initiate Android Driver****
+2021-06-03 14:23:51,993 - PayPlusProject - INFO - ****Install the Privacy Agreement****
+2021-06-03 14:23:52,579 - PayPlusProject - INFO - ****Allowing LocationPrompt****
+2021-06-03 14:23:53,294 - PayPlusProject - INFO - ****Skipping On-boarding screens****
+2021-06-03 14:23:57,580 - PayPlusProject - INFO - ****Click to display Sign in screen****
+2021-06-03 14:23:58,742 - PayPlusProject - INFO - ****Verifying the sign in page****
+2021-06-03 14:25:04,306 - PayPlusProject - INFO - ****Initiate Android Driver****
+2021-06-03 14:25:04,354 - PayPlusProject - INFO - ****Install the Privacy Agreement****
+2021-06-03 14:25:04,940 - PayPlusProject - INFO - ****Allowing LocationPrompt****
+2021-06-03 14:25:05,641 - PayPlusProject - INFO - ****Skipping On-boarding screens****
+2021-06-03 14:25:11,124 - PayPlusProject - INFO - ****Click to display Sign in screen****
+2021-06-03 14:25:11,803 - PayPlusProject - INFO - ****Verifying the sign in page****

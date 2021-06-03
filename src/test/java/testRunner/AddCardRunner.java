@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         (
                 features=".//Feature/AddCard.feature",
                 glue="stepDefinitions",
-                dryRun=false,
+                dryRun=true,
                 monochrome=true,
                 plugin= {"pretty", "html:test-output.html"}
         )

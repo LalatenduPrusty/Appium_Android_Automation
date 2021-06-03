@@ -12,10 +12,11 @@ import org.junit.runner.RunWith;
                 glue="stepDefinitions",
                 dryRun=false,
                 monochrome=true,
+                //tags = {"@sanity","@regression"}, //AND
                 plugin= {"pretty", "html:test-output.html"}
-                //plugin= {"pretty", "html:target/cucumber-html-report.html"}
+                //tags = {"@sanity,@Regression"} //OR
+
+
         )
-
-
-public class SignInRunner {
+class SignInRunner {
 }

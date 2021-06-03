@@ -242,7 +242,7 @@ public class DeleteCard {
         //Validation whether the wallet having cards or not
         if (ldriver.findElementsById("com.tesco.payqwiq.ppe:id/addCardBtn").isEmpty())
         {
-            System.out.println("**********Wallet with Funding Card(s)***********");
+            System.out.println("****Wallet with Funding Card(s)****");
 
         } else {
             System.out.println("****Wallet with no funding Cards****");

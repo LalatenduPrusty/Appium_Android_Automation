@@ -342,7 +342,7 @@ public class AddCard {
     {
             txtCardNumber.click();
             txtCardNumber.sendKeys("8999951111111183");
-            txtExpiryDate.sendKeys("11/26");
+            txtExpiryDate.sendKeys("10/40");
             txtCVV.sendKeys("123");
             txtCardHolderName.sendKeys("test");
             txtPostCode.click();

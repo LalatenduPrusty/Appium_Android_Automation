@@ -3,21 +3,27 @@ package stepDefinitions;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.cucumber.java.en.*;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import pageObject.SignInApp;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class SignInStep {
+public class SignInStep extends BaseClass {
 
-    public SignInApp lp;
-    public AndroidDriver<WebElement> driver;
+    //public SignInApp login;
+    //public AndroidDriver<WebElement> driver;
 
 
 
     @Given("User installs Pay+ App and on sign in screen")
-    public void user_installs_pay_app_and_on_sign_in_screen() throws MalformedURLException, InterruptedException {
+    public void user_installs_pay_app_and_on_sign_in_screen() throws MalformedURLException, InterruptedException
+    {
+        // Added logger to the project
+        logger= Logger.getLogger("PayPlusProject");
+        PropertyConfigurator.configure("log4j.properties");
 
         //File f = new File("src");
         //File fs = new File(f,"pay+-ppe3-release (3).apk");
@@ -39,45 +45,60 @@ public class SignInStep {
         URL url = new URL("http://localhost:4723/wd/hub");
 
         driver = new AndroidDriver<WebElement>(url,dc);
-        lp=new SignInApp(driver);
+        login=new SignInApp(driver);
 
-        lp.launchApp();
+        logger.info("****App launched successfully****");
+        login.launchApp();
 
     }
     @Then("Page title should be {string} displayed")
-    public void page_title_should_be_displayed(String title) {
-        lp.validateSignInTitle(title);
+    public void page_title_should_be_displayed(String title)
+    {
+        logger.info("****Sign-in page displayed****");
+        login.validateSignInTitle(title);
 
 
     }
     @When("User enters Email as {string} and Password as {string}")
-    public void user_enters_email_as_and_password_as(String email, String password) throws InterruptedException {
-        lp.signIn(email,password);
+    public void user_enters_email_as_and_password_as(String email, String password) throws InterruptedException
+    {
+        logger.info("****Provided wallet details****");
+        login.signIn(email,password);
 
     }
     @When("Clicks on Sign in button")
-    public void clicks_on_sign_in_button() throws InterruptedException {
-        lp.submitSignIn();
+    public void clicks_on_sign_in_button() throws InterruptedException
+    {
+        logger.info("****Clicked on sign in button****");
+        login.submitSignIn();
 
     }
     @When("set the PIN")
-    public void set_the_pin() throws InterruptedException {
-        lp.setPin();
+    public void set_the_pin() throws InterruptedException
+    {
+        logger.info("****Set the PIN****");
+        login.setPin();
 
     }
     @When("Ignore the store reminder and keep brightness as default")
-    public void ignore_the_store_reminder_and_keep_brightness_as_default() throws InterruptedException {
-        lp.storeReminderBrightness();
+    public void ignore_the_store_reminder_and_keep_brightness_as_default() throws InterruptedException
+    {
+        logger.info("****Acknowledged Reminder and brightness prompts ****");
+        login.storeReminderBrightness();
 
     }
     @Then("Pay screen should be displayed")
-    public void pay_screen_should_be_displayed_as_text_as() {
-        lp.validatePayScreenTitle();
+    public void pay_screen_should_be_displayed_as_text_as()
+    {
+        logger.info("****Pay screen validated successfully****");
+        login.validatePayScreenTitle();
 
     }
     @Then("Close the browser.")
-    public void close_the_browser() {
-        driver.closeApp();
+    public void close_the_browser()
+    {
+        logger.info("****Quit the driver****");
+        login.closeApp();
 
     }
 
